@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "ReturnTheFavor",
+    "slug": "return-the-favor",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "returnthefavor",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.marcorable.returnthefavor"
+    },
+    "android": {
+      "package": "com.marcorable.returnthefavor",
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": ["expo-router", "expo-notifications"],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
