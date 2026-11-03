@@ -7,13 +7,18 @@ reviews:
     base_branches:
       - develop
   path_instructions:
-    - path: "**/*.swift"
+    - path: "**/*.ts"
       instructions: >-
-        `.claude/rules/marcorable-swift/` 의 규칙을 기준으로 리뷰한다.
-        새 화면은 Screen 패턴(`<Name>Screen` 의 Model·ViewModel·Context)을 따른다.
+        `AGENTS.md`의 Project Boundaries와 Safety and Review를 기준으로 리뷰한다.
+        데이터 유실, SQLite 일관성, 플랫폼별 권한·알림·날짜 차이를 우선 확인한다.
+    - path: "**/*.tsx"
+      instructions: >-
+        `AGENTS.md`의 Project Boundaries와 Safety and Review를 기준으로 리뷰한다.
+        데이터 유실, SQLite 일관성, 플랫폼별 권한·알림·날짜 차이를 우선 확인한다.
 
 knowledge_base:
   code_guidelines:
     enabled: true
     filePatterns:
-      - ".claude/rules/**/*.md"
+      - "AGENTS.md"
+      - "docs/adr/**/*.md"
